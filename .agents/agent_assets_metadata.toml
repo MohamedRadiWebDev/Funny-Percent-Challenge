@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "his6XEvB0pm__4wZuEEcb"
+uri = "file://artifacts/percentage-challenge/README.md"
+type = "text"
+title = "README — تحدي النسبة من A to Z"
