@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import AnimatedImage from "./AnimatedImage";
+import ReactionImage from "./ReactionImage";
 import AnimatedText from "./AnimatedText";
 import PercentageSlider from "./PercentageSlider";
 
@@ -10,13 +10,13 @@ interface ButtonConfig {
 }
 
 function getButtonConfig(pct: number): ButtonConfig {
-  if (pct === 0) return { label: "ابدأ", key: "zero" };
-  if (pct <= 20) return { label: "جرب", key: "0-20" };
-  if (pct <= 40) return { label: "حاول تاني", key: "21-40" };
-  if (pct <= 60) return { label: "كمل", key: "41-60" };
-  if (pct <= 80) return { label: "أنت قربت", key: "61-80" };
-  if (pct < 100) return { label: "آخر محاولة", key: "81-99" };
-  return { label: "احتفل 🎉", key: "100" };
+  if (pct === 0) return { label: "ابدأ 🚀", key: "zero" };
+  if (pct <= 20) return { label: "حاول مرة كمان 😅", key: "0-20" };
+  if (pct <= 40) return { label: "ما استسلمتش دلوقتي 💪", key: "21-40" };
+  if (pct <= 60) return { label: "كمل بقا متوقفش 👀", key: "41-60" };
+  if (pct <= 80) return { label: "قرب أكتر مش هينفعك 🔥", key: "61-80" };
+  if (pct < 100) return { label: "خطوة واحدة بس 😍", key: "81-99" };
+  return { label: "ابدأ من الأول 🔄", key: "100" };
 }
 
 function getButtonGradient(pct: number): string {
@@ -80,7 +80,7 @@ export default function PercentageCard({ percentage, onPercentageChange }: Perce
           حركي السلايدر وقولي الصراحة متخافيش🔪
         </p>
       </div>
-      <AnimatedImage percentage={percentage} />
+      <ReactionImage percentage={percentage} />
       <AnimatedText percentage={percentage} />
       <div className="w-full">
         <PercentageSlider value={percentage} onChange={onPercentageChange} />
