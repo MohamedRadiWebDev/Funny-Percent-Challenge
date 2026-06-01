@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Funny Percentage Challenge"
+version = "1.0.0"
+id = "artifacts/percentage-challenge"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19372
+
+[services.development]
+run = "pnpm --filter @workspace/percentage-challenge run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/percentage-challenge", "run", "build" ]
+publicDir = "artifacts/percentage-challenge/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19372"
+BASE_PATH = "/"
