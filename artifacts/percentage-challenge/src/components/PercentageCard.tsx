@@ -70,27 +70,21 @@ export default function PercentageCard({ percentage, onPercentageChange }: Perce
         }}
         transition={{ duration: 0.6 }}
       />
-
       <div className="w-full text-center">
         <h1
           className="text-xl font-black tracking-tight"
           style={{ color: "#be185d", direction: "rtl" }}
-        >
-          تحدي النسبة 💯
-        </h1>
-        <p className="text-xs text-pink-400 mt-0.5 font-medium" style={{ direction: "rtl" }}>
-          حرك السلايدر وشوف نسبتك
+        >علي السكة 
+        تقييمك ل محمد بعد اخر خناقة </h1>
+        <p className="text-pink-400 mt-0.5 text-[16px] font-bold" style={{ direction: "rtl" }}>
+          حركي السلايدر وقولي الصراحة متخافيش🔪
         </p>
       </div>
-
       <AnimatedImage percentage={percentage} />
-
       <AnimatedText percentage={percentage} />
-
       <div className="w-full">
         <PercentageSlider value={percentage} onChange={onPercentageChange} />
       </div>
-
       <AnimatePresence mode="wait">
         <motion.button
           key={btnConfig.key}
@@ -115,7 +109,6 @@ export default function PercentageCard({ percentage, onPercentageChange }: Perce
           {btnConfig.label}
         </motion.button>
       </AnimatePresence>
-
       <div className="w-full flex justify-center gap-1.5 mt-1">
         {[20, 40, 60, 80, 100].map((threshold) => (
           <motion.div
