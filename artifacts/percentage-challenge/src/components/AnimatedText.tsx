@@ -7,13 +7,13 @@ interface TextConfig {
 }
 
 function getTextForPercentage(pct: number): TextConfig {
-  if (pct === 0) return { text: "ابدأ الآن! 🚀", key: "zero" };
-  if (pct <= 20) return { text: "حاول مرة تانية 😅", key: "0-20" };
-  if (pct <= 40) return { text: "لسه بدري 😂", key: "21-40" };
-  if (pct <= 60) return { text: "أنت قربت 👀", key: "41-60" };
-  if (pct <= 80) return { text: "جامد جدًا 🔥", key: "61-80" };
-  if (pct < 100) return { text: "فاضل خطوة 😍", key: "81-99" };
-  return { text: "مبروك وصلت 100% ❤️", key: "100" };
+  if (pct === 0) return { text: "حركي السلايدر وقولي الصراحة 🔪", key: "zero" };
+  if (pct <= 20) return { text: "شكلك لسه متضايقة أوي 😅", key: "0-20" };
+  if (pct <= 40) return { text: "فيه أمل... بس بالعافية 😂", key: "21-40" };
+  if (pct <= 60) return { text: "أهو بنتحرك في الاتجاه الصح", key: "41-60" };
+  if (pct <= 80) return { text: "كده الكلام الحلو بقا ❤️", key: "61-80" };
+  if (pct < 100) return { text: "خلاص فاضل خطوة صغيرة جدًا", key: "81-99" };
+  return { text: "خلاص كده اتصالحنا 🤝❤️", key: "100" };
 }
 
 interface AnimatedTextProps {

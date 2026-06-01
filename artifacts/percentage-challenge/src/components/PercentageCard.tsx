@@ -10,13 +10,13 @@ interface ButtonConfig {
 }
 
 function getButtonConfig(pct: number): ButtonConfig {
-  if (pct === 0) return { label: "ابدأ 🚀", key: "zero" };
-  if (pct <= 20) return { label: "حاول مرة كمان 😅", key: "0-20" };
-  if (pct <= 40) return { label: "ما استسلمتش دلوقتي 💪", key: "21-40" };
-  if (pct <= 60) return { label: "كمل بقا متوقفش 👀", key: "41-60" };
-  if (pct <= 80) return { label: "قرب أكتر مش هينفعك 🔥", key: "61-80" };
-  if (pct < 100) return { label: "خطوة واحدة بس 😍", key: "81-99" };
-  return { label: "ابدأ من الأول 🔄", key: "100" };
+  if (pct === 0) return { label: "ابدأي التقييم ❤️", key: "zero" };
+  if (pct <= 20) return { label: "لسه فيه زعل 😅", key: "0-20" };
+  if (pct <= 40) return { label: "الوضع بيتحسن 👀", key: "21-40" };
+  if (pct <= 60) return { label: "كملي بقا 😌", key: "41-60" };
+  if (pct <= 80) return { label: "قربنا أهو ❤️", key: "61-80" };
+  if (pct < 100) return { label: "خطوة واحدة 😍", key: "81-99" };
+  return { label: "نبدأ من جديد", key: "100" };
 }
 
 function getButtonGradient(pct: number): string {
