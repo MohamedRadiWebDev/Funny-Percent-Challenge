@@ -74,8 +74,8 @@ export default function PercentageCard({ percentage, onPercentageChange }: Perce
         <h1
           className="text-xl font-black tracking-tight"
           style={{ color: "#be185d", direction: "rtl" }}
-        >علي السكة 
-        تقييمك ل محمد بعد اخر خناقة </h1>
+        >مؤشر الصلح
+        علي السكة تقييمك ل محمد بعد اخر خناقة </h1>
         <p className="text-pink-400 mt-0.5 text-[16px] font-bold" style={{ direction: "rtl" }}>
           حركي السلايدر وقولي الصراحة متخافيش🔪
         </p>
